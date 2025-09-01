@@ -1,6 +1,6 @@
 # SMS_Phishing_Detector
 
-# 📱 SMS Phishing (Smishing) Detector
+# 📱 SMS Phishing Detector
 
 A Natural Language Processing (NLP) and Machine Learning project that detects phishing (smishing) messages in SMS text.  
 This tool helps users stay safe from fraudulent SMS messages by classifying them as **legitimate** or **phishing**.
