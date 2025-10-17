@@ -15,14 +15,19 @@ import google.generativeai as genai
 # -----------------------------
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+<<<<<<< HEAD
 # Use a stable model ID (avoid "-pro" if unsupported)
 GEMINI_MODEL_ID = os.getenv("GEMINI_MODEL_ID", "gemini-2.0-flash")  # changed
+=======
+GEMINI_MODEL_ID = os.getenv("GEMINI_MODEL_ID", "gemini-1.5-pro-latest")
+>>>>>>> 62981c20c99bd9688e0b49a1f503e4a26c7af898
 
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = "static/uploads"
 os.makedirs(app.config["UPLOAD_FOLDER"], exist_ok=True)
 
 # Gemini
+<<<<<<< HEAD
 if not GEMINI_API_KEY:
     print("WARNING: GEMINI_API_KEY is not set. Set it in your .env file before calling the API.")
 
@@ -38,6 +43,10 @@ except Exception as e:
     except Exception as e2:
         print(f"Model init error: fallback model creation also failed: {e2}")
         gemini_model = None
+=======
+genai.configure(api_key=GEMINI_API_KEY)
+gemini_model = genai.GenerativeModel(GEMINI_MODEL_ID)
+>>>>>>> 62981c20c99bd9688e0b49a1f503e4a26c7af898
 
 # -----------------------------
 # Data structures
