@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
   <link rel="icon" type="image/png" href="https://i.ibb.co/gZK2R5Hh/images.png">
 
   <meta charset="UTF-8">
@@ -149,24 +148,6 @@
         font-size: 1.6rem;
       }
     }
-=======
-  <meta charset="UTF-8">
-  <title>SMS Phishing Detection</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 30px; background: #f9f9f9; }
-    .container { max-width: 600px; margin: auto; padding: 20px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    h1 { text-align: center; color: #333; }
-    form { text-align: center; margin-top: 20px; }
-    input[type="file"] { margin: 10px 0; }
-    button { padding: 10px 20px; border: none; border-radius: 6px; background: #007bff; color: white; cursor: pointer; }
-    button:hover { background: #0056b3; }
-    .result { margin-top: 20px; padding: 15px; border-radius: 8px; background: #eef; }
-    pre { white-space: pre-wrap; word-wrap: break-word; }
-    mark { background: #ffeb3b; }
-    .badge { font-size: 1.2em; font-weight: bold; }
-    .urls { margin-top: 10px; }
-    .urls li { margin-bottom: 4px; }
->>>>>>> 62981c20c99bd9688e0b49a1f503e4a26c7af898
   </style>
 </head>
 <body>
@@ -181,11 +162,7 @@
 
     {% if image_path %}
       <div style="text-align:center; margin-top:20px;">
-<<<<<<< HEAD
         <img src="{{ image_path }}" alt="Uploaded SMS" style="max-width:100%; max-height:200px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-=======
-        <img src="{{ image_path }}" alt="Uploaded SMS" style="max-width:100%; max-height:200px; border-radius:8px;">
->>>>>>> 62981c20c99bd9688e0b49a1f503e4a26c7af898
       </div>
     {% endif %}
 
@@ -199,11 +176,7 @@
     {% if analysis %}
       <div class="result">
         <h2>🔍 Analysis Result</h2>
-<<<<<<< HEAD
         <div class="badge {{ analysis.verdict }}">{{ analysis.badge }}</div>
-=======
-        <div class="badge">{{ analysis.badge }}</div>
->>>>>>> 62981c20c99bd9688e0b49a1f503e4a26c7af898
         <p><b>Confidence:</b> {{ analysis.confidence }}</p>
         <p><b>User Message:</b> {{ analysis.user_message }}</p>
         <p><b>Reasons:</b></p>
@@ -234,8 +207,4 @@
     {% endif %}
   </div>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 62981c20c99bd9688e0b49a1f503e4a26c7af898
